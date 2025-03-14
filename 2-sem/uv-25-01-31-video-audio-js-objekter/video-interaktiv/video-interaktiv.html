@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaktiv video</title>
+    <link rel="stylesheet" href="css/video-interaktiv.css">
+</head>
+<body>
+    <header>
+        <h1>Interaktiv video</h1>
+        <h2>Ide til løsning</h2>
+        <p>W3 Schools video tutorial, se <a href="https://www.w3schools.com/html/html5_video.asp">her</a></p>
+        <p>Mere om JavaScript og video-objektets metoder, se <a href="https://www.w3schools.com/jsref/dom_obj_video.asp"> her </a></p>
+    </header>
+    <main>
+
+    <section>
+        <video id="minVideo" width="600">
+            <h2>Interaktiv video</h2>
+            <source 
+                src="assets/video/os_simplyUpload.mp4" 
+                type="video/mp4">
+                Denne browser understøtter ikke videoafspilleren.
+        </video>
+        <div class="panel">
+            <!-- her bliver videoen interaktiv -->
+            <button onclick="videoPlayer.test()">metode()</button>
+            <button onclick="videoPlayer.playPause()">Start/Stop</button>
+            <button onclick="videoPlayer.hopTil(0,0)">Hop til begyndelsen</button>
+            <button onclick="videoPlayer.hopTil(4,23)">Hop til 04:23</button>
+            <button onclick="videoPlayer.hopTil(6,19)">Hop til 06:19</button>
+        </div>
+    </section>        
+
+    </main>
+    <footer>
+        &copy; petj 2025
+    </footer>
+    <script src="js/video-interaktiv.js"></script>
+</body>
+</html>
