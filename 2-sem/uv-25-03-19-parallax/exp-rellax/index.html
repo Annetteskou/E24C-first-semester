@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rellax</title>
+    <style>
+        main {
+            height: 200vh;
+            width: 700vh;
+        }
+
+        /** husk: position relative kan være praktisk */
+        div {
+            position: relative;
+            width: 172px;
+            height: 92px;
+        }
+
+        /* classes kan tilføjes med mellemrum i din html */
+        .orange {
+            background-color: rgba(236, 69, 40, 0.2);
+            left: 123px;
+        }
+        .yellow {
+            background-color: #bef15633;
+        }
+    </style>
+</head>
+<body>
+    <h1>Relllax</h1>
+
+    <main>
+
+    
+      <div class="rellax orange" data-rellax-speed="9">
+        I’m super fast!!
+      </div>
+      <div class="rellax yellow" data-rellax-speed="-4">
+        I’m extra slow and smooth
+      </div>
+      <div class="rellax yellow" data-rellax-speed="4">
+        I’m that default chill speed
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <script>
+      //default JS Setting
+      var rellax = new Rellax('.rellax', {
+
+      });
+      
+
+      
+
+    </script>
+</body>
+</html>
